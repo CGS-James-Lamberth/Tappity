@@ -41,7 +41,14 @@ class ViewController: UIViewController {
         }
 
     }
+
+    func newFeature() {
+        println("Hello")
+    }
     
+    func aNewerFeature() {
+        println("Hello, again")
+    }
     
     @IBAction func turnFrench(sender: AnyObject) {
         timeLabel.text = "Temps"
@@ -54,6 +61,8 @@ class ViewController: UIViewController {
         scoreWordLabel.text = "Score"
         tapMeButton.setTitle("Tap Me", forState: UIControlState.Normal)
     }
+
+
 
     // Called each time the NSTimer ticks (every second)
     func timerTick(sender: NSTimer) {
