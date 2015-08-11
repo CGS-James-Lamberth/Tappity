@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -95,6 +95,26 @@
                                             <constraint firstItem="Vok-gp-Ch4" firstAttribute="top" secondItem="F8R-jd-9u6" secondAttribute="top" constant="8" id="yrt-Ky-xB5"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JW-IK-2hH">
+                                        <rect key="frame" x="20" y="192" width="48" height="30"/>
+                                        <state key="normal" title="French">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="turnFrench:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s7t-OD-PeU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-8E-qpe">
+                                        <rect key="frame" x="532" y="192" width="50" height="30"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="turnEnglish:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FEC-XQ-Lra"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -119,6 +139,9 @@
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="bVD-8U-tEM" id="orF-zI-13D"/>
+                        <outlet property="scoreWordLabel" destination="Vok-gp-Ch4" id="lPW-eT-qmc"/>
+                        <outlet property="tapMeButton" destination="H5l-Nl-2Dt" id="FcV-Mh-Di0"/>
+                        <outlet property="timeLabel" destination="7Pv-OR-Ko7" id="gKd-2r-0l6"/>
                         <outlet property="timeRemainingLabel" destination="5Hu-Fj-fgl" id="3Br-6y-GHW"/>
                     </connections>
                 </viewController>

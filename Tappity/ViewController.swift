@@ -19,7 +19,10 @@ class ViewController: UIViewController {
     // IBOutlets
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timeRemainingLabel: UILabel!
+    @IBOutlet weak var scoreWordLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
 
+    @IBOutlet weak var tapMeButton: UIButton!
     // Called when a colored button is tapped
     @IBAction func buttonTapped(sender: UIButton) {
 
@@ -37,6 +40,19 @@ class ViewController: UIViewController {
 
         }
 
+    }
+    
+    
+    @IBAction func turnFrench(sender: AnyObject) {
+        timeLabel.text = "Temps"
+        scoreWordLabel.text = "But"
+        tapMeButton.setTitle("appuyez sur moi", forState: UIControlState.Normal)
+    }
+    
+    @IBAction func turnEnglish(sender: AnyObject) {
+        timeLabel.text = "Time"
+        scoreWordLabel.text = "Score"
+        tapMeButton.setTitle("Tap Me", forState: UIControlState.Normal)
     }
 
     // Called each time the NSTimer ticks (every second)
